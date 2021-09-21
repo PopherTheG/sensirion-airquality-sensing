@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := asx2-esp32-app
+PROJECT_NAME := sensirion-airquality-sensing
 
 include $(IDF_PATH)/make/project.mk
 
