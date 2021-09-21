@@ -1,0 +1,25 @@
+menu "AIRSHIELD X2 ECM CONFIGURATION"    
+    config VOC_INSTALLED
+        bool "is VOC sensor SVM40 insalled?"
+        default n
+        help
+            If this is enabled it would assume that the VOC sensor is installed and it would run codes that would setup the sensor and codes that read values.
+
+    config CO2_INSTALLED
+        bool "Is CO2 sensor SCD41 installed?"
+        default n
+        help
+            If this is enabled it would assume that the CO2 sensor is installed and it would run codes that would setup the sensor and codes that read values.
+
+    config PM_INSTALLED
+        bool "Is particulate matter sensor SPS30 installed?"
+        default n
+        help
+            If this is enabled it would assume that the PM sensor is installed and it would run codes that would setup the sensor and codes that read values.
+
+    config HCHO_INSTALLED
+        bool "Is formaldehyde sensor SFA30 installed?"
+        default  n
+        help
+            If this is enabled it would assume that the HCHO sensor is installed and it would run codes that would setup the sensor and codes that read values.            
+endmenu

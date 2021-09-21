@@ -1,0 +1,77 @@
+{
+    "env": {
+        "MESSAGE": "MAC and LINUX users - change path from C:/esp/... to ~/esp/... or as appropriate for your environment",
+        "IDF_TOOLS": "C:/esp/tools/.espressif/tools",
+        "IDF_PATH": "C:/esp/esp-idf"
+    },
+    "configurations": [
+        {
+            "name": "esp32",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "${IDF_PATH}",
+                    "${IDF_TOOLS}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/build/config",
+                "C:/esp/esp-idf/components/log/include",
+                "C:/esp/esp-idf/components/esp_rom/include",
+                "C:/esp/esp-idf/components/esp_rom/include",
+                "C:/esp/esp-idf/components/esp_common/include",
+                "${workspaceFolder}/components/sensirion_common",
+                "C:/esp/esp-idf/components/driver/include",
+                "C:/esp/esp-idf/components/esp_system/include",
+                "C:/esp/esp-idf/components/esp_system/include",
+                "C:/esp/esp-idf/components/freertos/include",
+                "C:/esp/esp-idf/components/freertos/port/riscv/include",
+                "C:/esp/esp-idf/components/esp_timer/include",
+                "C:/esp/esp-idf/components/lwip/test_afl_host",
+                "C:/esp/esp-idf/components/heap/include",
+                "C:/esp/esp-idf/components/esp_hw_support/include",
+                "C:/esp/esp-idf/components/hal/include",
+                "C:/esp/esp-idf/components/soc/esp32/include",
+                "C:/esp/esp-idf/components/hal/esp32/include",
+                "C:/esp/esp-idf/components/xtensa/include",
+                "C:/esp/esp-idf/components/xtensa/esp32/include",
+                "C:/esp/esp-idf/components/xtensa/esp32/include",
+                "C:/esp/esp-idf/components/soc/include",
+                "C:/esp/esp-idf/components/soc/include",
+                "C:/esp/esp-idf/components/soc/esp32c3/include",
+                "C:/esp/esp-idf/components/soc/esp32c3/include",
+                "C:/esp/esp-idf/components/newlib/platform_include",
+                "C:/esp/esp-idf/components/newlib/platform_include",
+                "C:/esp/esp-idf/components/esp_ringbuf/include",
+                "C:/esp/esp-idf/components/esp_ringbuf/include",
+                "${workspaceFolder}/components/voc_index",
+                "${workspaceFolder}/components/lvgl",
+                "${workspaceFolder}/components/lvgl_esp32_drivers",
+                "${workspaceFolder}/components",
+                "${workspaceFolder}/components/gui_st7789",
+                "C:/cygwin64/lib/gcc/x86_64-pc-cygwin/10/include",
+                "C:/cygwin64/lib/gcc/x86_64-pc-cygwin/10/include",
+                "C:/esp/esp-idf/components/newlib/platform_include",
+                "C:/esp/esp-idf/components/newlib/platform_include",
+                "${workspaceFolder}/components/svm40",
+                "${workspaceFolder}/components/sensirion_utils",
+                "C:/esp/esp-idf/components/newlib/platform_include",
+                "${workspaceFolder}/components/sps30",
+                "C:/esp/esp-idf/components/newlib/platform_include",
+                "C:/esp/tools/.espressif/tools/riscv32-esp-elf/1.24.0.123_64eb9ff-8.4.0/riscv32-esp-elf/riscv32-esp-elf/include",
+                "${workspaceFolder}/components/sensirion_common_scd4x",
+                "${workspaceFolder}/components/particulate_matter",
+                "${workspaceFolder}/components/scd41",
+                "${workspaceFolder}/components/co2"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
