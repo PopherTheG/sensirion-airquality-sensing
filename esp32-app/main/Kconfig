@@ -1,4 +1,4 @@
-menu "AIRSHIELD X2 ECM CONFIGURATION"    
+menu "AIR QUALITY SENSORS CONFIGURATION"    
     config VOC_INSTALLED
         bool "is VOC sensor SVM40 insalled?"
         default n
