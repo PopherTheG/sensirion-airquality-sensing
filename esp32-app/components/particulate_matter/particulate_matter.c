@@ -79,10 +79,10 @@ void particulate_matter_init()
 
 void particulate_matter_get_pm10p0(uint16_t *pm10p0)
 {
-    *pm10p0 = (uint16_t)(s_pm10p0);
+    *pm10p0 = (uint16_t)(s_pm10p0 * 1000); // Multiplying by 1000 for scaling purposes since this will be saved in an uint16_t variable.
 }
 
 void particulate_matter_get_pm2p5(uint16_t *pm2p5)
 {
-    *pm2p5 = (uint16_t)(s_pm2p5);
+    *pm2p5 = (uint16_t)(s_pm2p5 * 1000); // Multiplying by 1000 for scaling purposes since this will be saved in an uint16_t variable.
 }

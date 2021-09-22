@@ -52,18 +52,21 @@ void app_main(void)
     /* Start voc index component. This shoud be called first before you can retrieve values
     from the sensor */
     voc_index_init();
+    vTaskDelay(pdMS_TO_TICKS(1000));
 #endif
 
 #ifdef CONFIG_PM_INSTALLED
     /* Start particulate matter component. This should be called first before you can retrieve 
     values from the sensor. */
     particulate_matter_init();
+    vTaskDelay(pdMS_TO_TICKS(1000));
 #endif
 
 #ifdef CONFIG_CO2_INSTALLED
     /* Start co2 component. This should be called first before you can retrieve values from the
     sensor. */
     co2_init();
+    vTaskDelay(pdMS_TO_TICKS(1000));
 #endif
 
     /* Start displaying on the ST7789 TFT display */
@@ -115,4 +118,7 @@ static void system_init()
         .master.clk_speed = 100000};
     i2c_param_config(I2C_NUM_1, &i2c1_config);
     i2c_driver_install(I2C_NUM_1, i2c1_config.mode, 0, 0, 0);
+
+    /* Initialise WiFi */
+
 }

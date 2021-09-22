@@ -848,7 +848,7 @@ static void pm2_5_bar_value_refresher_task(lv_task_t *task_info)
 
     lv_bar_set_value((lv_obj_t *)(task_info->user_data), 100, LV_ANIM_OFF); // set it at 100 just to fill in the bar's color.
 
-    // https: //www.airveda.com/blog/Understanding-Particulate-Matter-and-Its-Associated-Health-Impact
+    // https://www.airveda.com/blog/Understanding-Particulate-Matter-and-Its-Associated-Health-Impact
     if (real_pm2p5 <= 30)
     {
         lv_style_set_bg_color(&pm2_5_bar_style, LV_STATE_DEFAULT, LV_COLOR_GOOD);
